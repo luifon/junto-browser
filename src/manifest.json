@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Junto",
+  "version": "0.1.0",
+  "description": "Share one browser tab, with its picture and its sound, in a Junto call.",
+  "minimum_chrome_version": "120",
+  "permissions": ["tabs", "tabCapture", "nativeMessaging", "offscreen"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Share this tab in Junto"
+  },
+  "commands": {
+    "_execute_action": {
+      "description": "Share this tab in Junto"
+    }
+  }
+}
